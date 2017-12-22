@@ -1,0 +1,333 @@
+#earlsFoodCategories {
+    position: absolute;
+    width: 200px;
+    /*height: 100%;*/
+    height: 840px;
+    background: lightgoldenrodyellow;
+    /*background-color: transparent;*/
+    opacity: 0.52;
+    left: 200px;
+}
+
+#earlsFoodCategories ul li {
+    color:rgba(230, 230, 230, 0.9);
+    list-style:none;
+    padding: 15px 25px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+
+#foodSearchEarls[type=text] {
+    text-align: center;
+    width: 430px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: black;
+    /*background-position: 10px 10px;*/
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+#first_entry {
+    max-width: 450px;
+}
+#mainPicture_earlsMenu_table {
+    margin-left: 420px;
+    margin-top: 20px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    position: relative;
+}
+
+#mainPicture_earlsMenu_table td {
+    height: 100px;
+    vertical-align: middle;
+    /*border: 1px solid #dddddd;*/
+    text-align: left;
+    padding: 8px;
+}
+
+/*#mainPart_earlsMenu {
+    margin-left: 400px;
+    margin-right: 0;
+    width: 300px;
+}*/
+
+.steak_menu_background {
+    /*background:url(../images/newsone.jpg) left center no-repeat;*/
+    /*overflow:hidden;*/
+    margin-top:60px;
+    margin-left: 400px;
+    /*left: 400px;*/
+    right: 20px;
+    margin-right: 20px;
+}
+
+#background_food_list {
+
+}
+
+#whole {
+    background:url(../images/portfoliobg.jpg) no-repeat center top scroll;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom:120px;
+
+}
+
+.confirmation_popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.confirmation_popup .popuptext {
+    visibility: hidden;
+    /*width: 160px;*/
+
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.confirmation_popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.confirmation_popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/*
+#popup_declare_allergy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+}*/
+
+#popup_declare_allergy_main_div {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    left: 50%;
+    right: 50%;
+    margin-left: -200px;
+    margin-right: 50%;
+    top: 50%;
+    margin-top: -250px;
+    overflow: auto;
+}
+
+#close_popup_div {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: 2px solid black;
+    text-align: center;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+
+}
+
+#close_popup_div p {
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#declareAllergyPopUpHeader {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: white;
+    padding-top: 25px;
+    height: 15%;
+    border-bottom: 2px solid black;
+}
+
+.close_popup_button {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: 2px solid black;
+    text-align: center;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.close_popup_button p {
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#popup_steak_description {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+}
+
+#popup_steak_description_main_div {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    left: 50%;
+    right: 50%;
+    margin-left: -200px;
+    margin-right: 50%;
+    top: 50%;
+    margin-top: -250px;
+    overflow: auto;
+}
+
+#steakDescriptionHeader {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: white;
+    padding-top: 25px;
+    height: 15%;
+    border-bottom: 2px solid black;
+}
+
+
+#specialInstructionInputBox {
+padding:10px;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway;
+margin-left: 30px;
+margin-right: 30px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display:none;
+    position: fixed;
+    margin-top: 25px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Modal Content Box */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+    padding-bottom: 30px;
+}
+
+.inputlogin
+{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size:16px;
+}
+
+.buttonforLG
+{
+    background-color: orange;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    font-size:20px;
+}
+
+.buttonforLG:hover {
+    opacity: 0.8;
+}

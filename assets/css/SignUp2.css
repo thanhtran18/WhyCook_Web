@@ -1,0 +1,11 @@
+input{
+    border-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    padding: 10px; /*the space from the text to the the lines*/
+    margin-top: 15px;/*this does not have left margin*/
+    margin-right:15px;
+    margin-bottom:15px;
+    width: 50%; /*This made the page vertical!*/
+
+}

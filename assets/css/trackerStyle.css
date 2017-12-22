@@ -1,0 +1,373 @@
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+/* The Modal (background) */
+.modal {
+    display:none;
+    position: fixed;
+    margin-top: 25px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+    padding-bottom: 30px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.inputlogin
+{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size:16px;
+}
+
+.buttonforLG
+{
+    background-color: orange;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    font-size:20px;
+}
+
+.buttonforLG:hover {
+    opacity: 0.8;
+}
+
+.sideframe
+{
+    margin-top: 80px;
+    width: 250px;
+    height: 666px;
+    background: #da9b31;
+
+}
+
+.sideframe a
+{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    padding-right: 100px;
+}
+
+.sideframe ul li
+{
+    list-style-type: none;
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #f0ad4e;
+}
+
+.sideframe ul li:hover
+{
+    background: white;
+    transition: linear all 0.4s;
+    margin-left: 10px;
+}
+
+.sideframe ul li a:hover
+{
+    color: black;
+}
+
+.selected
+{
+    background: white;
+}
+
+.selected a
+{
+    color: black;
+}
+
+
+.sideframe
+{
+    width: 200px;
+    height: 666px;
+    background: #da9b31;
+    display: inline-block;
+
+}
+
+.sideframe a
+{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    padding-right: 60px;
+
+}
+
+.sstep{}
+
+.sideframe ul .sstep {
+    color: black;
+    background: white;
+    display: block;
+    padding: 15px;
+    transition: linear all 0.4s;
+    border-bottom: 1px solid #f0ad4e;
+    margin-left: 10px;
+}
+
+.sideframe ul .sstep a {
+    color: black;
+}
+
+.sideframe ul li
+{
+    list-style-type: none;
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #f0ad4e;
+}
+
+.sideframe ul li:hover
+{
+    background: white;
+    transition: linear all 0.4s;
+    margin-left: 10px;
+}
+
+.sideframe ul li a:hover
+{
+    color: black;
+}
+
+.selected
+{
+    background: white;
+}
+
+.selected a
+{
+    color: black;
+}
+
+.containerT {
+    width: 900px;
+    margin-top: -50px;
+}
+.containerT h3 {
+    color:rgba(100,100,100,0.9);
+}
+.containerT .progress-bar {
+    width:0%;
+    height:10px;
+    display:block;
+    background:linear-gradient(to right,rgb(76,217,105),rgb(90,200,250),rgb(0,132,255),rgb(52,170,220),rgb(88,86,217),rgb(255,45,83),rgb(88,86,217),rgb(52,170,220),rgb(0,132,255),rgb(76,217,105));
+    margin-top:0px;
+    background-size:350px 5px;
+    border-radius:10px;
+    animation:loadingT 6s ease-in-out forwards;
+}
+
+.progress-bar-full{
+    width:100%;
+    background-color:#e0e0e0;
+    margin-top:10px;
+    padding:3px;
+    border-radius:3px;
+    height:15px;
+}
+
+.containerT .shadowT {
+    width:100%;
+    height:40px;
+    background:linear-gradient(to bottom,rgba(100,100,100,0.17),rgba(100,100,100,0.1),transparent);
+    transform:skew(45deg) translate(15px,5px);
+}
+
+
+@keyframes loadingT {
+    to {
+        width:100%;
+    }
+}
+
+.mainpage
+{
+    background:url(../images/portfoliobg.jpg);
+    background-size:cover;
+}
+
+.trackerPage
+{
+    display: inline-block;
+    margin-left: 75px;
+    margin-top: 150px;
+    position: absolute;
+}
+
+.checkoutPage
+{
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 50px;
+    position: absolute;
+    width: 45%;
+}
+
+.checkoutRegion
+{
+    display: inline-block;
+    position: absolute;
+}
+
+.receipt
+{
+    margin-top: 80px;
+    float: right;
+    width: 350px;
+    height: 666px;
+    background: url(../images/wood-samples-ha1182193-64_1000.jpg);
+    background-size: cover;
+    display: inline-block;
+}
+
+.receiptlist
+{
+}
+
+.rrr{
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+.rrr .receiptlist {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+.rrr li {
+    margin-left: 10px;
+}
+
+.rr{}
+
+.lili{
+}
+
+.receipt .rr .lili
+{
+    list-style-type: inherit;
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+.reviewpage
+{
+
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 28px;
+    width: 100px;
+    background: #f2f2f2;
+    border: 1px solid;
+    border-color: white #f7f7f7 whitesmoke;
+    border-radius: 3px;
+    background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+    background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+    background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown-2017 {
+    position: relative;
+    width: 130%;
+    margin: 0;
+    padding: 6px 8px 6px 10px;
+    height: 28px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #62717a;
+    text-shadow: 0 1px white;
+    background: #f2f2f2; /* Fallback for IE 8 */
+    background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+    border: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+
+}.dropdown-01 {
+     position: relative;
+     width: 130%;
+     margin: 0;
+     padding: 6px 8px 6px 10px;
+     height: 28px;
+     line-height: 14px;
+     font-size: 12px;
+     color: #62717a;
+     text-shadow: 0 1px white;
+     background: #f2f2f2; /* Fallback for IE 8 */
+     background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+     border: 0;
+     border-radius: 0;
+     -webkit-appearance: none;
+ }
+
+.dropdown:before, .dropdown:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 9px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 4px dashed;
+    border-color: #888888 transparent;
+    pointer-events: none;
+}
+.dropdown:before {
+    border-bottom-style: solid;
+    border-top: none;
+}
+
+.dropdown:after {
+    margin-top: 7px;
+    border-top-style: solid;
+    border-bottom: none;
+}

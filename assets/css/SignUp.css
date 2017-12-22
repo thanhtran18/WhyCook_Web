@@ -1,0 +1,459 @@
+#form {
+    padding-left: 15%;
+    margin-top: 80px;
+    postion: absolute;
+}
+.input2{
+    border-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    padding: 10px; /*the space from the text to the the lines*/
+    margin-top: 15px;/*this does not have left margin*/
+    margin-right:15px;
+    margin-bottom:15px;
+    width: 50%; /*This made the page vertical!*/
+
+}
+
+/*Banking information*/
+.dropdown {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 28px;
+    width: 150px;
+    background: #f2f2f2;
+    border: 1px solid;
+    border-color: white #f7f7f7 whitesmoke;
+    border-radius: 3px;
+    background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+    background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+    background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown-2017 {
+    position: relative;
+    width: 130%;
+    margin: 0;
+    padding: 6px 8px 6px 10px;
+    height: 28px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #62717a;
+    text-shadow: 0 1px white;
+    background: #f2f2f2; /* Fallback for IE 8 */
+    background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+    border: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}.dropdown-01 {
+     position: relative;
+     width: 130%;
+     margin: 0;
+     padding: 6px 8px 6px 10px;
+     height: 28px;
+     line-height: 14px;
+     font-size: 12px;
+     color: #62717a;
+     text-shadow: 0 1px white;
+     background: #f2f2f2; /* Fallback for IE 8 */
+     background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+     border: 0;
+     border-radius: 0;
+     -webkit-appearance: none;
+ }
+.dropdown:before, .dropdown:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 9px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 4px dashed;
+    border-color: #888888 transparent;
+    pointer-events: none;
+}
+.dropdown:before {
+    border-bottom-style: solid;
+    border-top: none;
+}
+
+.dropdown:after {
+    margin-top: 7px;
+    border-top-style: solid;
+    border-bottom: none;
+}
+
+/* The actual popup code  */
+.confirmation_popup .popuptext {
+    visibility: hidden;
+/width: 160px;/
+
+background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.confirmation_popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.confirmation_popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+#popup_declare_allergy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+}
+
+#popup_declare_allergy_main_div {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    left: 50%;
+    right: 50%;
+    margin-left: -200px;
+    margin-right: 50%;
+    top: 50%;
+    margin-top: -250px;
+    overflow: auto;
+}
+
+#close_popup_div {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: 2px solid black;
+    text-align: center;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+
+}
+
+#close_popup_div p {
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+#declareAllergyPopUpHeader {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: lightyellow;
+    padding-top: 25px;
+    height: 15%;
+    border-bottom: 2px solid black;
+}
+
+.close_popup_button {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: 2px solid black;
+    text-align: center;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.close_popup_button p {
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#popup_steak_description {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+}
+
+#popup_steak_description_main_div {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    left: 50%;
+    right: 50%;
+    margin-left: -200px;
+    margin-right: 50%;
+    top: 50%;
+    margin-top: -250px;
+    overflow: auto;
+}
+
+#steakDescriptionHeader {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: lightyellow;
+    padding-top: 25px;
+    height: 15%;
+    border-bottom: 2px solid black;
+}
+
+/*Payment information tab*/
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.accordion.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}
+/*Side bar */
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+div.tab {
+    float: left;
+    border: 1px solid #ccc;
+    /*background-color: #f1f1f1;*/
+    width: 200px;
+    height:900px;
+    margin-top:80px;
+}
+
+/* Style the buttons inside the tab */
+/*div.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}*/
+
+/* Change background color of buttons on hover */
+
+
+/* Create an active/current "tab button" class */
+/*div.sideframe .active {
+ background: blue;
+}*/
+
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    /*border: 1px solid #ccc;*/
+    width: 70%;
+    /*border-left: none;*/
+    height: 300px;
+    margin-top:80px;
+    margin-left: 50px;
+}
+
+
+
+
+/**************************************************************************/
+.sideframe
+{
+    width: 200px;
+    height: 1100px;
+    background: #da9b31;
+    display: inline-block;
+
+}
+
+.sideframe a
+{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    padding-right: 60px;
+
+}
+
+.sstep{}
+
+.sideframe ul .sstep {
+    color: black;
+    background: white;
+    display: block;
+    padding: 15px;
+    transition: linear all 0.4s;
+    border-bottom: 1px solid #f0ad4e;
+    margin-left: 10px;
+}
+
+.sideframe ul .sstep a {
+    color: black;
+}
+
+.sideframe ul li
+{
+    list-style-type: none;
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #f0ad4e;
+}
+
+.sideframe ul li:hover
+{
+    background: white;
+    transition: linear all 0.4s;
+    margin-left: 10px;
+}
+
+.sideframe ul li a:hover
+{
+    color: black;
+}
+
+.sideframe ul li:active{
+    background: white;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+/* The Modal (background) */
+.modal {
+    display:none;
+    position: fixed;
+    margin-top: 35px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+    padding-bottom: 30px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.inputlogin
+{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size:16px;
+}
+
+.buttonforLG
+{
+    background-color: orange;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    font-size:20px;
+}
+
+.buttonforLG:hover {
+    opacity: 0.8;
+}
+
