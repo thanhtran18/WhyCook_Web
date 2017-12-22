@@ -1,0 +1,584 @@
+<!-- COMP3020
+GROUP 16 - PROJECT: WHYCOOK?
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Food and Restorent One page Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+
+
+    <!--For Plugins external css-->
+    <link rel="stylesheet" href="assets/css/animate/animate.css" />
+    <link rel="stylesheet" href="assets/css/trackerStyle_old.css" />
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!--FoodTypesPage css-->
+    <link rel="stylesheet" href="assets/css/foodTypesPage.css" />
+
+
+
+    <script src="../../Downloads/WhyCook_Project%202/assets/js/trackerContactPopup.js"></script>
+    <script src="../../Downloads/WhyCook_Project%202/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <header id="FoodTypesPageHeader" class="navbar-fixed-top" style="background-image: url(assets/images/food_background.png); background-position: center;align-items: center">
+        <div class="main_menu_bg">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand our_logo" href="index.html"><img style="margin-top: 34px;" src="assets/images/images_kevin/logo.png" alt="" /></a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="FoodTypesPage_group16.html">Home</a></li>
+                                    <li><a href="MyAccount_group16.html" class="booking">Hi, Buhle!</a></li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section>
+
+        <div class="sideframe" style="height: 920px">
+            <ul>
+                <li class="sstep"><a href="#">Ordering</a></li>
+                <li><a href="#">Check Out</a></li>
+                <li><a href="#">Tracking</a></li>
+                <!-- SAMPLE PROMOTION -->
+                <a href="#"><li style="margin-top: 20px; border-top: 2px solid black; text-align: center"><b> Available Promotions </b></li></a>
+
+                <img src="assets/images/promotion.jpg" alt="Choose Any Medium Feast Pizza for $10.99 each">
+
+                <!--GO TO THE CHECKOUT PAGE WHEN CLICK ON ORDER NOW************************-->
+                <p style="text-align: center; margin-bottom: 0px; color: red;"><b>For only $10.99</b></p>
+                <a href="Checkout_group16.html" type="button"><button style="color: black; margin-left: 30px">ORDER NOW</button></a> <!-- sample promotino ends here-->
+
+            </ul>
+        </div>
+        <section id="portfolio" class="portfolio" style="padding-left: 200px; padding-right: 10px; display: inline-block">
+            <div class="container">
+                <div class="row">
+                    <div class="portfolio_content text-center  wow fadeIn" data-wow-duration="5s">
+                        <div class="col-md-12">
+                            <!--SEARCH FOR RESTAURANT FEATURE-->
+                            <form>
+                                <input id="searchForRestaurant" type="text" name="search" placeholder="Search for your restaurant..">
+                            </form>
+
+                            <!--<div class="head_title text-center">-->
+                                <h3 style="padding-top: 30px">OR</h3>
+                                <h4 style="font-family: Candara">Choose your favourite type of food (sorted by your preferences)!</h4>
+
+                            <!--</div>-->
+
+                            <div class="main_portfolio_content">
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="assets/images/images_kevin/chinesefood.jpg" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Chinese Food</h6>
+                                        <a href="javascript:void(0)" class="btn btn-primary" onclick="openRestaurantListPopup()">Go for it</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="assets/images/images_kevin/steak.jpg" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Steak</h6>
+                                        <a href="javascript:void(0)" class="btn btn-primary" onclick="openRestaurantListPopup()">Go for it</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="assets/images/images_kevin/pizza.jpg" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Pizza</h6>
+                                        <a href="javascript:void(0)" class="btn btn-primary" onclick="openRestaurantListPopup()">Go for it</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img style="width: 100%;" src="assets/images/images_kevin/sushi.jpg" alt="" />
+                                    <div class="portfolio_images_overlay text-center" style="">
+                                        <h6>Sushi</h6>
+                                        <a href="javascript:void(0)" class="btn btn-primary" onclick="openRestaurantListPopup()">Go for it</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="assets/images/images_kevin/indianfood.jpg" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Indian Food</h6>
+                                        <a href="javascript:void(0)" class="btn btn-primary" onclick="openRestaurantListPopup()">Go for it</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="assets/images/images_kevin/seafood.jpg" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Seafood</h6>
+                                        <a href="javascript:void(0)" class="btn btn-primary" onclick="openRestaurantListPopup()">Go for it</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="assets/images/images_kevin/nigerianfood.jpg" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Nigerian Food</h6>
+                                        <a href="javascript:void(0)" class="btn btn-primary" onclick="openRestaurantListPopup()">Go for it</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="assets/images/images_kevin/vietnamesefood.jpg" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Vietnamese Food</h6>
+                                        <a href="javascript:void(0)" class="btn btn-primary" onclick="openRestaurantListPopup()">Go for it</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--A LIST OF RESTAURANTS POPUP-->
+        <section class="restaurantListPopup" id="restaurantListPopup_Rating">
+
+
+            <div id="restaurantListPopup_main_div">
+
+                <div id="restaurantListPopupHeaderBar" class="navbar-fixed-top">
+                    <p id="restaurantListPopUpHeader">
+                        Choose the Restaurant
+                    </p>
+
+                    <span onclick="document.getElementById('restaurantListPopup_Rating').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                </div>
+
+                <div id="restaurantListPopupContent">
+
+
+                    <table id="restaurantTable" style="margin-top: 80px; left: 0; width: 100%;">
+                        <tr>
+                            <div id="restaurantTableHeader" class="navbar-fixed-top">
+                                <th>Restaurant<p style="float: right; margin-right: 10px">Sorted by:</p></th>
+                                <th><a href="#"><i style="color: lightblue;"><b>Rating</b></i></a></th>
+                                <th><a href="#" onclick="closeRestaurantListPopup(); openRestaurantListPopup_deliveryFee()">Delivery Fee</a></th>
+                                <th><a href="#" onclick="closeRestaurantListPopup(); openRestaurantListPopup_distance()">Distance</a></th>
+                            </div>
+
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Earls';">
+                            <td>
+                                <img src="assets/images/images_kevin/earls-logo.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Earls Restaurant</a></b>
+                                <br>Main Street
+                            </td>
+                            <td><b>9.0</b></td>
+                            <td>$2.49</td>
+                            <td>5.0km</td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Tony Roma\'s'">
+                            <td>
+                                <img src="assets/images/images_kevin/tony-roma.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Tony Roma's</a></b>
+                                <br>Pembina Hwy
+                            </td>
+                            <td><b>8.7</b></td>
+                            <td>Free for over $20</td>
+                            <td>5.6km</td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'The Keg Steak House and Bar';">
+                            <td>
+                                <img src="assets/images/images_kevin/thekeg.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">The Keg Steak House and Bar</a></b>
+                                <br>McGillivray Blvd
+                            </td>
+                            <td><b>8.5</b></td>
+                            <td>$2.99</td>
+                            <td>3.0km</td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Maxime\' Restaurant and Lounge';">
+                            <td>
+                                <img src="assets/images/images_kevin/maxime_restaurant.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Maxime's Restaurant and Lounge</a></b>
+                                <br>St Mary's Rd
+                            </td>
+                            <td><b>8.1</b></td>
+                            <td>$3.99</td>
+                            <td>2.4km</td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Rae and Jerry\' Steak House';">
+                            <td>
+                                <img src="assets/images/images_kevin/rea_jerrys.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Rae and Jerry's Steak House</a></b>
+                                <br>Portage Ave
+                            </td>
+                            <td><b>7.7</b></td>
+                            <td>Free for over $25</td>
+                            <td>3.5km</td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Carne Italian Chophouse';">
+                            <td>
+                                <img src="assets/images/images_kevin/carne-italian-chopshouse.png" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Carne Italian Chophouse</a></b>
+                                <br>Main Street
+                            </td>
+                            <td><b>7.5</b></td>
+                            <td>$1.99</td>
+                            <td>1.2km</td>
+                        </tr>
+                    </table>
+                </div> <!--restaurant table ends here -->
+            </div>
+        </section> <!--A list of restaurants popup ends here-->
+
+
+
+        <!--A LIST OF RESTAURANTS POPUP DELIVERY FEE BASED-->
+        <section class="restaurantListPopup" id="restaurantListPopup_deliveryFee">
+
+
+            <div id="restaurantListPopup_main_div">
+
+                <div id="restaurantListPopupHeaderBar" class="navbar-fixed-top">
+                    <p id="restaurantListPopUpHeader">
+                        Choose the Restaurant
+
+                    </p>
+                    <span onclick="document.getElementById('restaurantListPopup').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                </div>
+
+                <div id="restaurantListPopupContent">
+
+
+                    <table id="restaurantTable" style="margin-top: 80px; left: 0; width: 100%;">
+                        <tr>
+                            <div id="restaurantTableHeader" class="navbar-fixed-top">
+                                <th>Restaurant<p style="float: right; margin-right: 10px">Sorted by:</p></th>
+                                <th><a href="#" onclick="closeRestaurantListPopup_deliveryFee(); openRestaurantListPopup()">Rating</a></th>
+                                <th><a href="#"><i style="color: lightblue;"><b>Delivery Fee</b></i></a></th>
+                                <th><a href="#" onclick="closeRestaurantListPopup_deliveryFee(); openRestaurantListPopup_distance()">Distance</a></th>
+                            </div>
+
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Tony Roma\'s'">
+                            <td>
+                                <img src="assets/images/images_kevin/tony-roma.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Tony Roma's</a></b>
+                                <br>Pembina Hwy
+                            </td>
+                            <td>8.7</td>
+                            <td><b>Free for over $20</b></td>
+                            <td>5.6km</td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Rae and Jerry\' Steak House';">
+                            <td>
+                                <img src="assets/images/images_kevin/rea_jerrys.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Rae and Jerry's Steak House</a></b>
+                                <br>Portage Ave
+                            </td>
+                            <td>7.7</td>
+                            <td><b>Free for over $25</b></td>
+                            <td>3.5km</td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Carne Italian Chophouse';">
+                            <td>
+                                <img src="assets/images/images_kevin/carne-italian-chopshouse.png" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Carne Italian Chophouse</a></b>
+                                <br>Main Street
+                            </td>
+                            <td>7.5</td>
+                            <td><b>$1.99</b></td>
+                            <td>1.2km</td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Earls';">
+                            <td>
+                                <img src="assets/images/images_kevin/earls-logo.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Earls Restaurant</a></b>
+                                <br>Main Street
+                            </td>
+                            <td>9.0</td>
+                            <td><b>$2.49</b></td>
+                            <td>5.0km</td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'The Keg Steak House and Bar';">
+                            <td>
+                                <img src="assets/images/images_kevin/thekeg.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">The Keg Steak House and Bar</a></b>
+                                <br>McGillivray Blvd
+                            </td>
+                            <td>8.5</td>
+                            <td><b>$2.99</b></td>
+                            <td>3.0km</td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Maxime\' Restaurant and Lounge';">
+                            <td>
+                                <img src="assets/images/images_kevin/maxime_restaurant.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Maxime's Restaurant and Lounge</a></b>
+                                <br>St Mary's Rd
+                            </td>
+                            <td>8.1</td>
+                            <td><b>$3.99</b></td>
+                            <td>2.4km</td>
+                        </tr>
+
+
+                    </table>
+                </div> <!--restaurant table ends here -->
+            </div>
+        </section> <!--A list of restaurants popup ends here-->
+
+        <!--A LIST OF RESTAURANTS POPUP DISTANCE BASED-->
+        <section class="restaurantListPopup" id="restaurantListPopup_distance">
+
+
+            <div id="restaurantListPopup_main_div">
+
+                <div id="restaurantListPopupHeaderBar" class="navbar-fixed-top">
+                    <p id="restaurantListPopUpHeader">
+                        Choose the Restaurant
+                    </p>
+                    <span onclick="document.getElementById('restaurantListPopup_distance').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                </div>
+
+                <div id="restaurantListPopupContent">
+
+
+                    <table id="restaurantTable" style="margin-top: 80px; left: 0; width: 100%;">
+                        <tr>
+                            <div id="restaurantTableHeader" class="navbar-fixed-top">
+                                <th>Restaurant<p style="float: right; margin-right: 10px">Sorted by:</p></th>
+                                <th><a href="#" onclick="closeRestaurantListPopup_distance(); openRestaurantListPopup()">Rating</a></th>
+                                <th><a href="#" onclick="closeRestaurantListPopup_distance(); openRestaurantListPopup_deliveryFee()">Delivery Fee</a></th>
+                                <th><a href="#"><i style="color: lightblue;"><b>Distance</b></i></a></th>
+                            </div>
+
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Carne Italian Chophouse';">
+                            <td>
+                                <img src="assets/images/images_kevin/carne-italian-chopshouse.png" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Carne Italian Chophouse</a></b>
+                                <br>Main Street
+                            </td>
+                            <td>7.5</td>
+                            <td>$1.99</td>
+                            <td><b>1.2km</b></td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Maxime\' Restaurant and Lounge';">
+                            <td>
+                                <img src="assets/images/images_kevin/maxime_restaurant.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Maxime's Restaurant and Lounge</a></b>
+                                <br>St Mary's Rd
+                            </td>
+                            <td>8.1</td>
+                            <td>$3.99</td>
+                            <td><b>2.4km</b></td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'The Keg Steak House and Bar';">
+                            <td>
+                                <img src="assets/images/images_kevin/thekeg.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">The Keg Steak House and Bar</a></b>
+                                <br>McGillivray Blvd
+                            </td>
+                            <td>8.5</td>
+                            <td>$2.99</td>
+                            <td><b>3.0km</b></td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Rae and Jerry\' Steak House';">
+                            <td>
+                                <img src="assets/images/images_kevin/rea_jerrys.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Rae and Jerry's Steak House</a></b>
+                                <br>Portage Ave
+                            </td>
+                            <td>7.7</td>
+                            <td>Free for over $25</td>
+                            <td><b>3.5km</b></td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Earls';">
+                            <td>
+                                <img src="assets/images/images_kevin/earls-logo.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Earls Restaurant</a></b>
+                                <br>Main Street
+                            </td>
+                            <td>9.0</td>
+                            <td>$2.49</td>
+                            <td><b>5.0km</b></td>
+                        </tr>
+                        <tr onclick="window.location='../../Downloads/WhyCook_Project 2/EarlsMenuPage_group16.html'; localStorage.name = 'Tony Roma\'s'">
+                            <td>
+                                <img src="assets/images/images_kevin/tony-roma.jpg" style="width: 80px; height: 80px; float: right" align="right">
+                                <b><a href="../../Downloads/WhyCook_Project%202/EarlsMenuPage_group16.html">Tony Roma's</a></b>
+                                <br>Pembina Hwy
+                            </td>
+                            <td>8.7</td>
+                            <td>Free for over $20</td>
+                            <td><b>5.6km</b></td>
+                        </tr>
+                    </table>
+                </div> <!--restaurant table ends here -->
+            </div>
+        </section> <!--A list of restaurants popup ends here-->
+
+        <script type="text/javascript">
+            var rListPopup = document.getElementById("restaurantListPopup_Rating");
+            function openRestaurantListPopup() {
+                rListPopup.style.display = "block";
+            }
+
+
+            function closeRestaurantListPopup() {
+                rListPopup.style.display = "none";
+            }
+
+            var rListPopup_deliveryFee = document.getElementById("restaurantListPopup_deliveryFee");
+            function openRestaurantListPopup_deliveryFee() {
+                rListPopup_deliveryFee.style.display = "block";
+            }
+
+            function closeRestaurantListPopup_deliveryFee() {
+                rListPopup_deliveryFee.style.display = "none";
+            }
+
+            var rListPopup_distance = document.getElementById("restaurantListPopup_distance");
+            function openRestaurantListPopup_distance() {
+                rListPopup_distance.style.display = "block";
+            }
+
+            function closeRestaurantListPopup_distance() {
+                rListPopup_distance.style.display = "none";
+            }
+
+            var earlsMenu = document.getElementById("earlsMenuPopup");
+            function openEarlsMenuPopup() {
+                earlsMenu.style.display = "block";
+            }
+            function closeEarlsMenuPopup() {
+                earlsMenu.style.display = "none";
+            }
+        </script>
+
+
+
+
+    </section>
+
+
+
+    <section id="footer_widget" class="footer_widget">
+        <div class="container">
+            <div class="row">
+                <div class="footer_widget_content text-center">
+                    <div class="col-md-4">
+                        <div class="single_widget wow fadeIn" data-wow-duration="2s">
+                            <h3>Our Office</h3>
+
+                            <div class="single_widget_info">
+                                <p>66 Chancellors Cir, Winnipeg.
+
+                                    <span>Province: Manitoba</span>
+                                    <span>Canada</span>
+                                    <span class="phone_email">phone: 99 666 9696</span>
+                                    <span>Email: whycook@gmail.com</span></p>
+                            </div>
+
+                            <div class="footer_socail_icon">
+                                <a href="#footer_socail_icon"><i class="fa fa-facebook"></i></a>
+                                <a href="#footer_socail_icon"><i class="fa fa-google-plus"></i></a>
+                                <a href="#footer_socail_icon"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="single_widget wow fadeIn" data-wow-duration="4s">
+                            <h3>Our Services</h3>
+
+                            <div class="single_widget_info">
+                                <p><span class="date_day">Monday To Friday</span>
+                                    <span>We provide services for 24 hours</span>
+
+                                    <span class="date_day">Saturday & Sunday</span>
+                                    <span>9:00am to 11:59pm</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="single_widget wow fadeIn" data-wow-duration="5s">
+                            <h3>Question? Ask us.</h3>
+
+                            <div class="single_widget_form text-left">
+                                <form action="#" id="formid">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name" placeholder="first name" required="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div> <!-- end of form-group -->
+
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
+                                    </div>
+
+                                    <input type="submit" value="SEND" class="btn btn-primary">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="scrollup">
+        <a href="#"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+
+    <script src="../../Downloads/WhyCook_Project%202/assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="../../Downloads/WhyCook_Project%202/assets/js/vendor/bootstrap.min.js"></script>
+
+    <script src="../../Downloads/WhyCook_Project%202/assets/js/jquery-easing/jquery.easing.1.3.js"></script>
+    <script src="../../Downloads/WhyCook_Project%202/assets/js/wow/wow.min.js"></script>
+    <script src="../../Downloads/WhyCook_Project%202/assets/js/plugins.js"></script>
+    <script src="../../Downloads/WhyCook_Project%202/assets/js/main.js"></script>
+</body>
+</html>
