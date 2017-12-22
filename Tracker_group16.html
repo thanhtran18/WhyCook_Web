@@ -1,0 +1,307 @@
+<!-- COMP3020
+GROUP 16 - PROJECT: WHYCOOK?
+-->
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Why Cook?</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+
+
+    <!--For Plugins external css-->
+    <link rel="stylesheet" href="assets/css/animate/animate.css" />
+    <link rel="stylesheet" href="assets/css/trackerStyle.css" />
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <script src="../../Downloads/WhyCook_Project%202/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+<header id="home" class="navbar-fixed-top" style="background-image: url(assets/images/food_background.png); background-position: center;align-items: center;">
+
+    <!-- End navbar-collapse-->
+
+    <div class="main_menu_bg">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand our_logo" href="../../Downloads/WhyCook_Project%202/index.html"><img src="assets/images/logo.png" style="margin-top: 34px" alt="" /></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="../../Downloads/WhyCook_Project%202/FoodTypesPage_group16.html">Home</a></li>
+                                <li><a href="MyAccount_group16.html" class="booking">Hi, Buhle!</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header> <!-- End Header Section -->
+
+<section id="mainpage" class="mainpage">
+
+    <div class="sideframe">
+        <ul>
+            <li><a href="../../Downloads/WhyCook_Project%202/FoodTypesPage_group16.html">Ordering</a></li>
+            <li><a href="#">Check Out</a></li>
+            <li class="sstep"><a href="#">Tracking</a></li>
+        </ul>
+    </div>
+
+    <div class="trackerPage">
+        <div class="containerT">
+            <h1>Tracking</h1>
+            <h5 id="text0" style="text-align: center">We are processing your order</h5>
+            <div class="progress-bar-full">
+                <span class="progress-bar"></span>
+            </div>
+            <image id="test0" src="assets/images/checklist-business.png" style="width:40px;height:40px; float:right; margin-right: -70px; margin-top: -30px;"></image>
+            <br>
+            <h5 id="text1" style="text-align: center"><br></h5>
+            <div class="progress-bar-full">
+                <div id ="demo1"></div>
+            </div>
+            <image id="image1" src="assets/images/chef-is-cooking-icon.png" style="width:40px;height:40px; float:right; margin-right: -70px; margin-top: -30px;"></image>
+            <br>
+            <h5 id="text2" style="text-align: center"><br></h5>
+            <div class="progress-bar-full">
+                <div id ="demo2"></div>
+            </div>
+            <image id="image2" src="assets/images/food-icon.png" style="width:40px;height:40px; float:right; margin-right: -70px; margin-top: -30px;"></image>
+            <br>
+            <h5 id="text3" style="text-align: center"><br></h5>
+            <div class="progress-bar-full">
+                <div id ="demo3"></div>
+            </div>
+            <image id="image3" src="assets/images/done.png" style="width:40px;height:40px; float:right; margin-right: -70px; margin-top: -30px;"></image>
+            <br>
+            <h5 id="text4" style="text-align: center"><br></h5>
+
+            <div class="progress-bar-full">
+                <div id ="demo4"></div>
+            </div>
+            <image id="image4" src="assets/images/house.png" style="width:40px;height:40px; float:right; margin-right: -70px; margin-top: -30px;"></image>
+        </div>
+        <br>
+        <h5 id="text5" style="text-align: center"><br></h5>
+        <br>
+        <a href="#!" onclick="document.getElementById('modal-wrapper').style.display='block'" style="top: 100%;left: 40%; position: absolute;">
+            Having problems? Let us know!
+        </a>
+        <div style="position: absolute; left: 80%; margin-right: 30px">
+            <a href="../../Downloads/WhyCook_Project%202/FoodTypesPage_group16.html"><button style="text-align: center" class="btn btn-primary" >
+                REORDER
+            </button></a>
+        </div>
+    </div>
+
+
+</section>
+
+
+<section id="footer_widget" class="footer_widget">
+    <div class="container">
+        <div class="row">
+            <div class="footer_widget_content text-center">
+                <div class="col-md-4">
+                    <div class="single_widget wow fadeIn" data-wow-duration="2s">
+                        <h3>Our Office</h3>
+
+                        <div class="single_widget_info">
+                            <p>66 Chancellors Cir, Winnipeg.
+
+                                <span>Province: Manitoba</span>
+                                <span>Canada</span>
+                                <span class="phone_email">phone: 99 666 9696</span>
+                                <span>Email: whycook@gmail.com</span></p>
+                        </div>
+
+                        <div class="footer_socail_icon">
+                            <a href="#footer_socail_icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#footer_socail_icon"><i class="fa fa-google-plus"></i></a>
+                            <a href="#footer_socail_icon"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="single_widget wow fadeIn" data-wow-duration="4s">
+                        <h3>Our Services</h3>
+
+                        <div class="single_widget_info">
+                            <p><span class="date_day">Monday To Friday</span>
+                                <span>We provide services for 24 hours</span>
+
+                                <span class="date_day">Saturday & Sunday</span>
+                                <span>9:00am to 11:59pm</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="single_widget wow fadeIn" data-wow-duration="5s">
+                        <h3>Question? Ask us.</h3>
+
+                        <div class="single_widget_form text-left">
+                            <form action="#" id="formid">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" placeholder="first name" required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div> <!-- end of form-group -->
+
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
+                                </div>
+
+                                <input type="submit" value="submit" class="btn btn-primary">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<div class="scrollup">
+    <a href="#"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+
+<script src="../../Downloads/WhyCook_Project%202/assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="../../Downloads/WhyCook_Project%202/assets/js/vendor/bootstrap.min.js"></script>
+
+<script src="../../Downloads/WhyCook_Project%202/assets/js/jquery-easing/jquery.easing.1.3.js"></script>
+<script src="../../Downloads/WhyCook_Project%202/assets/js/wow/wow.min.js"></script>
+<script src="../../Downloads/WhyCook_Project%202/assets/js/plugins.js"></script>
+<script src="../../Downloads/WhyCook_Project%202/assets/js/main.js"></script>
+</body>
+
+
+
+
+<div id="modal-wrapper" class="modal">
+
+    <div class="modal-content animate">
+
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+            <h1 style="text-align:center;">Contact Us</h1>
+        </div>
+
+        <form>
+            <input class="inputlogin" type="text" placeholder="Enter Name" name="uname"><br>
+            <input class="inputlogin" type="text" placeholder="Enter Email" name="email"><br>
+            <textarea class="inputlogin" name="message" rows="3" placeholder="Message"></textarea>
+            <button class="buttonforLG" type="submit">Submit</button><br>
+        </form>
+
+    </div>
+
+</div>
+
+
+<script>
+    // If user clicks anywhere outside of the modal, Modal will close
+
+    var modal = document.getElementById('modal-wrapper');
+    var modal2 = document.getElementById('modal-wrapper2');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    var myVar = setTimeout(myFunction, 6000);
+
+    function myFunction() {
+        document.getElementById("demo1").innerHTML =  '<span class="progress-bar"></span>';
+        document.getElementById("test0").src =  "assets/images/checklist-business2.png";
+        document.getElementById("text0").innerHTML =  'We have received your order';
+        document.getElementById("text1").innerHTML =  'We started preparing the ingredients';
+    }
+
+    var myVar1 = setTimeout(myFunction1, 12000);
+
+    function myFunction1() {
+        document.getElementById("demo2").innerHTML =  '<span class="progress-bar"></span>';
+        document.getElementById("image1").src =  "assets/images/chef-is-cooking-icon2.png"
+        document.getElementById("text1").innerHTML =  'All the ingredients are ready';
+        document.getElementById("text2").innerHTML =  'Now we are cooking your food';
+    }
+
+    var myVar2 = setTimeout(myFunction2, 18000);
+
+    function myFunction2() {
+        document.getElementById("demo3").innerHTML =  '<span class="progress-bar"></span>';
+        document.getElementById("image2").src =  "assets/images/food-icon2.png"
+        document.getElementById("text2").innerHTML =  'Your food is done';
+        document.getElementById("text3").innerHTML =  'Checking Quality';
+    }
+
+    var myVar3 = setTimeout(myFunction3, 24000);
+
+    function myFunction3() {
+        document.getElementById("demo4").innerHTML =  '<span class="progress-bar"></span>';
+        document.getElementById("image3").src =  "assets/images/done2.png"
+        document.getElementById("text3").innerHTML =  'Quality Checked';
+        document.getElementById("text4").innerHTML =  'We are delivering your food';
+    }
+
+    setTimeout(myFunction4, 30000);
+    function myFunction4() {
+        document.getElementById("image4").src =  "assets/images/house2.png"
+        document.getElementById("text4").innerHTML =  'Your food has been delivered';
+        document.getElementById("text5").innerHTML =  'Enjoy your meals';
+    }
+
+</script>
+
+
+</html>

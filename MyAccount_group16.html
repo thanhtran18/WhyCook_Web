@@ -1,0 +1,609 @@
+<!-- COMP3020
+GROUP 16 - PROJECT: WHYCOOK?
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Food and Resturant One page Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+
+
+    <!--For Plugins external css-->
+    <link rel="stylesheet" href="assets/css/animate/animate.css" />
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!--SignUp CSS-->
+    <link rel="stylesheet" href="assets/css/SignUp.css" />
+
+
+    <script src="../../Downloads/WhyCook_Project%202/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="../../Downloads/WhyCook_Project%202/assets/js/SignUpProcess.js"></script>
+
+</head>
+
+
+<body>
+<header id="FoodTypesPageHeader" class="navbar-fixed-top" style="background-image: url(assets/images/food_background.png); background-position: center;align-items: center">
+    <div class="main_menu_bg">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand our_logo" href="../../Downloads/WhyCook_Project%202/index.html"><img src="assets/images/Tife-Images/logo.png" alt="" style="margin-top: 34px;"/></a>
+
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="../../Downloads/WhyCook_Project%202/FoodTypesPage_group16.html">Home</a></li>
+                                <li><a href="MyAccount_group16.html" class="booking">Hi, Buhle!</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header> <!-- End Header Section -->
+
+
+
+<div id="sframe" class="sideframe tab">
+    <ul >
+        <!--may each need class=tablinks later-->
+        <li id="gen"><a href="#"  onclick="openCity(event, 'London')" id="defaultOpen">General Information</a></li>
+        <li id="pay"><a href="#"  onclick="openCity(event, 'Paris')">Payment Information</a></li>
+        <li id="pre" class=""><a href="#"  onclick="openCity(event, 'Tokyo')">Preferences</a></li>
+
+    </ul>
+
+</div>
+
+
+
+
+
+<div id="London" class="tabcontent">
+
+    <h1 style="margin-top: 20px">My Profile: General Information</h1>
+    <br>
+    <div>
+        <div style="text-align: left">
+            <form>
+                <h5 style="font-family: sans-serif"><b>First Name</b></h5>
+                <input class="input2" style="margin-top: -20px;" type="text" name="firstname" value="Buhle"><br>
+                <h5 style="font-family: sans-serif"><b>Last Name</b></h5>
+                <input class="input2" style="margin-top: -20px;" type="text" name="lastname" value="Mwanza"><br>
+                <h5 style="font-family: sans-serif"><b>Email</b></h5>
+                <input class="input2" style="margin-top: -20px;" type="text" name="emailAddress" value="buhle@sendMail.com"><br>
+                <button type="button"  onclick="document.getElementById('modal-wrapper').style.display ='block'" class="btn btn-primary">Change Password</button>
+            </form>
+        </div>
+
+        <br>
+        <br>
+
+        <div style="text-align: left">
+            <h4 style="font-family: sans-serif"><b>Addresses</b></h4>
+            <ul class="Addresses">
+                <li class="Places" id="addr1"><h5 style="font-family: sans-serif">Address 1: 66 Chancellors Circle, Winnipeg, Manitoba. <span><a href="#!" onclick="document.getElementById('addr1').style.display='none'">(<u>Remove</u>)</a></span></h5></li>
+                <li class="Places" id="addr2"><h5 style="font-family: sans-serif">Address 2: 1910 Pembina Highway, Winnipeg, Manitoba. <span><a href="#!" onclick="document.getElementById('addr2').style.display='none'">(<u>Remove</u>)</a></span></h5></li>
+                <li class="Places" id="addr3" style="display: none;"><h5 style="font-family: sans-serif">Address 1: 69 Aggasiz Drive, Winnipeg, Manitoba. <span><a href="#!" onclick="document.getElementById('addr3').style.display='none'">(<u>Remove</u>)</a></span></h5></li>
+            </ul>
+            <div>
+                <button type="button" onclick="document.getElementById('modal-wrapper2').style.display='block'" class="btn btn-primary">Add New Address</button>
+                <a href="../../Downloads/WhyCook_Project%202/FoodTypesPage_group16.html"><button style="float: right;" class="btn btn-primary">Start Ordering</button></a>
+
+                <img src="assests/images/home.png" style="height: 40px">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="Paris" class="tabcontent" style="height: 1700px;">
+    <h1 style="margin-top: 20px">Payment Information</h1><br>
+
+    <div id="imagecontain">
+        <div id="creditc">
+            <img src="assets/images/creditCard.png" style="margin-bottom: 20px; height: 275px;">
+            <div style="display: inline-block; float: right; margin-top: 75px;">
+                <h3>Card Type: VISA Credit Card</h3>
+                <h4>Card Number: 1111-2222-3333-4444</h4>
+                <button type="button" onclick="removecard('creditc');" class="btn btn-primary">Remove Card</button>
+            </div>
+        </div>
+        <br>
+        <div id="giftc">
+            <img src="assets/images/giftCard.png" style="height: 300px; margin-left: -10px;">
+            <div style="display: inline-block; float: right; margin-top: 75px;">
+                <h3>Card Type: Gift Card</h3>
+                <h3>Gift Card Balance: $1987.08</h3>
+                <button type="button" onclick="removecard('giftc');" class="btn btn-primary">Remove Card</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="../../Downloads/WhyCook_Project%202/FoodTypesPage_group16.html"><button style="float: right;" class="btn btn-primary">Start Ordering</button></a>
+
+    <h3>Add New Payment</h3>
+
+    <form >
+        <div class="accordion" href="#!">Add Credit Card</div>
+        <div class="panel" style="text-align: center">
+            <div>
+                <input class="input2" type="text" placeholder="Name on card" name="Email">
+            </div>
+            <div>
+                <input class="input2" type="text" placeholder="Card Number" name="Email">
+            </div>
+            <label style="text-align: center;;">Expiration Date</label>
+
+            <div class="dropdown">
+                <select name="one" class="dropdown-01">
+                    <option value="">01</option>
+                    <option value="1">02</option>
+                    <option value="2">03</option>
+                    <option value="3">04</option>
+                    <option value="1">05</option>
+                    <option value="2">06</option>
+                    <option value="3">07</option>
+                    <option value="1">08</option>
+                    <option value="2">09</option>
+                    <option value="3">10</option>
+                    <option value="1">11</option>
+                    <option value="2">12</option>
+                </select>
+            </div>
+
+            <div class="dropdown">
+                <select name="one" class="dropdown-2017">
+
+                    <option value="">2017</option>
+                    <option value="1">2018</option>
+                    <option value="2">2019</option>
+                    <option value="3">2020</option>
+                    <option value="1">2021</option>
+                    <option value="2">2022</option>
+                    <option value="3">2023</option>
+                    <option value="1">2024</option>
+                    <option value="2">2025</option>
+                    <option value="3">2026</option>
+                    <option value="1">2027</option>
+                    <option value="2">2028</option>
+                    <option value="3">2029</option>
+                    <option value="1">2030</option>
+                    <option value="2">2031</option>
+                    <option value="3">2032</option>
+                    <option value="1">2033</option>
+                    <option value="2">2034</option>
+                    <option value="3">2035</option>
+                    <option value="1">2036</option>
+                    <option value="2">2037</option>
+                </select>
+            </div><br>
+            <button type="button" onclick="document.getElementById('creditc').style.display =  'block';" class="btn btn-primary" style="margin-bottom: 10px;">Add Card</button>
+        </div>
+
+        <div class="accordion">Add Bank Account</div>
+        <div class="panel" style="text-align: center">
+            <a href="#!" onclick="bankbutton('cibc')"><img id="cibc" src="assets/images/Tife-Images/CIBCicon.jpg" alt="CIBC" width="100" height ="100"></a>
+            <a href="#!" onclick="bankbutton('rbc')"><img id="rbc" src="assets/images/Tife-Images/RBCicon.jpg" alt="RBC" width="100" height ="100"></a>
+            <a href="#!" onclick="bankbutton('scot')"><img id="scot" src="assets/images/Tife-Images/Scotiabank.jpg" alt="ScotiaBank" width="100" height ="100"></a>
+            <a href="#!" onclick="bankbutton('bmo')"><img id="bmo" src="assets/images/Tife-Images/BMOicon.png" alt="BMO" width="100" height=" 100"></a>
+            <a href="#!" onclick="bankbutton('td')"><img id="td" src="assets/images/Tife-Images/TDicon.png" alt="TD Bank" width="100" height ="100"></a><br>
+            <input class="input2" type="text" placeholder="Card Number" name="Email"><br>
+            <button type="button" class="btn btn-primary">Add Card</button>
+        </div>
+
+        <div class="accordion">Gift Card</div>
+        <div class="panel" style="text-align: center">
+            <input class="input2" type="text" placeholder="Card Number" name="Email"><br>
+            <input class="input2" type="text" placeholder="Verification code" name="Email">
+            <br>
+            <button type="button" onclick="document.getElementById('giftc').style.display =  'block';" class="btn btn-primary">Add Card</button>
+        </div>
+
+    </form>
+
+</div>
+
+<div id="Tokyo" class="tabcontent">
+
+    <h1 style="margin-top: 20px">Preferences</h1><br>
+    <h3>My Favorite Foods</h3>
+
+    <div id="imgcontainer" style="margin-left: 10%">
+        <img src="assets/images/Bowl.jpg" style="height: 250px; margin-right: 20px;">
+        <img src="assets/images/Steak.jpg" style="height: 250px; margin-right: 20px;">
+        <img src="assets/images/Pizza.jpg" style="height: 250px; margin-right: 20px;">
+    </div>
+
+    <button  class="btn btn-primary" onclick="document.getElementById('modal-wrapper5').style.display='block'" style="margin-top: 50px; margin-left: 300px; width: 250px;" >
+        Add Favorite Food
+    </button>
+    <br>
+    <h3>Allergies</h3>
+    <ul>
+        <li style="list-style: disc; font-size: 25px">Eggs</li>
+        <li style="list-style: disc; font-size: 25px">Peanuts</li>
+        <li style="list-style: disc; font-size: 25px">Fish</li>
+    </ul>
+    <button  class="btn btn-primary" onclick="document.getElementById('modal-wrapper1').style.display='block'" style="margin-top: 50px; margin-left: 300px; width: 250px;" >
+        Add Allergies
+    </button>
+    <a href="../../Downloads/WhyCook_Project%202/FoodTypesPage_group16.html"><button class="btn btn-primary" style="margin-left: 300px; margin-top: 50px; width: 250px">Start Ordering</button></a>
+</div>
+
+
+
+
+<!--Pop-up Code-->
+<div id="popup_declare_allergy">
+    <div id="popup_declare_allergy_main_div">
+        <p id="declareAllergyPopUpHeader">Great!
+        </p>
+
+
+        <br>
+        <h4 style="text-align: center">Your new account is ready!</h4>
+        <br>
+        <!--<h4 style="text-align: center;">We will omit every item <br>on the menu that contains <br>the food you are allergic to</h4>-->
+        <a href="#"> <h4 style="text-align: center;"><u>Go have a peak at your profile page</u></h4></a><br>
+        <a href="#"> <h4 style="text-align: center;"><u>Go to homepage</u></h4></a>
+
+        <span onclick="document.getElementById('popup_declare_allergy').style.display='none'" class="close" title="Close PopUp">&times;</span>
+    </div>
+</div>
+<!--where footer begins-->
+<section id="footer_widget" class="footer_widget">
+    <div class="container">
+        <div class="row">
+            <div class="footer_widget_content text-center">
+                <div class="col-md-4">
+                    <div class="single_widget wow fadeIn" data-wow-duration="2s">
+                        <h3>Our Office</h3>
+
+                        <div class="single_widget_info">
+                            <p>66 Chancellors Cir, Winnipeg.
+
+                                <span>Province: Manitoba</span>
+                                <span>Canada</span>
+                                <span class="phone_email">phone: 99 666 9696</span>
+                                <span>Email: whycook@gmail.com</span></p>
+                        </div>
+
+                        <div class="footer_socail_icon">
+                            <a href="#footer_socail_icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#footer_socail_icon"><i class="fa fa-google-plus"></i></a>
+                            <a href="#footer_socail_icon"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="single_widget wow fadeIn" data-wow-duration="4s">
+                        <h3>Our Services</h3>
+
+                        <div class="single_widget_info">
+                            <p><span class="date_day">Monday To Friday</span>
+                                <span>We provide services for 24 hours</span>
+
+                                <span class="date_day">Saturday & Sunday</span>
+                                <span>9:00am to 11:59pm</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="single_widget wow fadeIn" data-wow-duration="5s">
+                        <h3>Question? Ask us.</h3>
+
+                        <div class="single_widget_form text-left">
+                            <form action="#" id="formid">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" placeholder="first name" required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div> <!-- end of form-group -->
+
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
+                                </div>
+
+                                <input type="submit" value="Send" class="btn btn-primary">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STRAT SCROLL TO TOP -->
+
+<div class="scrollup">
+    <a href="#"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+
+
+<!--The script code for the side bar functionality.-->
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+
+        if (cityName.localeCompare('Tokyo') == 0)
+        {
+            document.getElementById("pre").classList.add('sstep');
+            document.getElementById("gen").classList.remove('sstep');
+            document.getElementById("pay").classList.remove('sstep');
+            document.getElementById("sframe").style.height = "1100px";
+        }
+
+        if (cityName.localeCompare('London') == 0)
+        {
+            document.getElementById("gen").classList.add('sstep');
+            document.getElementById("pay").classList.remove('sstep');
+            document.getElementById("pre").classList.remove('sstep');
+            document.getElementById("sframe").style.height = "700px";
+        }
+
+        if (cityName.localeCompare('Paris') == 0)
+        {
+            document.getElementById("pay").classList.add('sstep');
+            document.getElementById("pre").classList.remove('sstep');
+            document.getElementById("gen").classList.remove('sstep');
+            document.getElementById("sframe").style.height = "1700px";
+        }
+    }
+
+
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+</script>
+
+<!--Pop-up Script code-->
+
+
+<!--Script code for the payment information page-->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display == "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    }
+</script>
+
+<script>
+    function removecard(name) {
+        document.getElementById(name).style.display =  'none';
+    }
+
+</script>
+
+
+
+</body>
+
+<div id="modal-wrapper2" class="modal">
+
+    <div class="modal-content animate">
+
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('modal-wrapper2').style.display='none'" class="close" title="Close PopUp">&times;</span>
+            <h1 style="text-align:center;">Change address</h1>
+            <img style="margin-top: 10px;" src="assets/images/map.png">
+        </div>
+
+        <form>
+            <input class="inputlogin" type="text" placeholder="Address" name="addr"><br>
+            <div class="buttonforLG" style="text-align: center;" onclick="document.getElementById('modal-wrapper2').style.display='none'; document.getElementById('addr3').style.display='block'">Submit Your Address</div><br>
+        </form>
+
+    </div>
+
+</div>
+
+<div id="modal-wrapper" class="modal">
+
+    <div class="modal-content animate">
+
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+            <h1 style="text-align:center;">Change Password</h1>
+        </div>
+
+        <form>
+            <input class="inputlogin" type="text" placeholder="Enter Old Password" name="uname"><br>
+            <input class="inputlogin" type="text" placeholder="Enter New Password" name="postal"><br>
+            <input class="inputlogin" type="text" placeholder="Confirm New Password" name="postal"><br>
+            <button onclick="document.getElementById('modal-wrapper').style.display='none'"class="buttonforLG" type="submit">Submit</button><br>
+        </form>
+
+    </div>
+
+</div>
+
+<div id="modal-wrapper5" class="modal">
+
+    <div class="modal-content animate">
+
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('modal-wrapper5').style.display='none'" class="close" title="Close PopUp">&times;</span>
+            <h1 style="text-align:center;">Preference</h1>
+        </div>
+
+        <form>
+
+            <h5 style="text-align: center">Add favorite restaurant</h5>
+            <input class="inputlogin" type="text" placeholder="Enter Old Password" name="uname"><br>
+            <h5 style="text-align: center">Add favorite dish</h5>
+            <input class="inputlogin" type="text" placeholder="Enter New Password" name="postal"><br>
+            <button onclick="document.getElementById('modal-wrapper5').style.display='none'"class="buttonforLG" type="submit">Submit</button><br>
+        </form>
+
+    </div>
+
+</div>
+
+<!--POPUP DECLARE ALLERGY-->
+<div id="modal-wrapper1" class="modal" style="margin-top: 40px">
+    <!--<div id="popup_declare_allergy_main_div">-->
+
+    <div class="modal-content animate">
+        <!--<p id="declareAllergyPopUpHeader">
+            Got an allergy?
+        </p>-->
+        <h1 style="height: 80px; padding-top: 10px; text-align:center; margin-bottom: 40px; border-bottom: 2px solid black">Got an allergy?</h1>
+
+        <h4 style="text-align: center">Let Us Know!</h4>
+        <h4 style="text-align: center; margin-bottom: 20px">We will notice this <br> for your uses later<br></h4>
+        <div style="text-align: center">
+            <input style="transform: scale(1.5); margin-right: 10px" type="checkbox" name="fruit" value="Apple"><b style="font-size: large; margin-right: 10px">Eggs</b>
+            <input style="transform: scale(1.5); margin-right: 10px" type="checkbox" name="fruit" value="Orange"><b style="font-size: large; margin-right: 10px">Peanuts</b>
+            <input style="transform: scale(1.5); margin-right: 10px" type="checkbox" name="fruit" value="Banana"><b style="font-size: large; margin-right: 10px">Dairy</b>
+            <input style="transform: scale(1.5); margin-right: 10px" type="checkbox" name="fruit" value="Apple"><b style="font-size: large; margin-right: 10px">Fish</b>
+            <input style="transform: scale(1.5); margin-right: 10px" type="checkbox" name="fruit" value="Orange"><b style="font-size: large; margin-right: 10px">Soy</b>
+            <input style="transform: scale(1.5); margin-right: 10px" type="checkbox" name="fruit" value="Banana"><b style="font-size: large; margin-right: 10px">Wheat</b>
+        </div>
+        <!--<input id="searchForRestaurant" style="margin-left: 30px; margin-top: 40px; width: 540px; text-align: center; left: 50%; right: 50%;" id="add_your_allergy" name="add your allergy" placeholder="Add your allergy" type="text">-->
+        <input class="inputlogin" placeholder="Add your allergy" name="addr"><br>
+        <button onclick="document.getElementById('modal-wrapper1').style.display='none'" class="btn btn-primary" style="width: 90%; margin-left: 29px; margin-top: 20px; height: 50px; text-align: center" id="confirm_allergy">Declare Allergy</button>
+
+
+        <span onclick="document.getElementById('modal-wrapper1').style.display='none'" class="close" title="Close PopUp">&times;</span>
+    </div>
+</div> <!-- POPUP DECLARE ALLERGY ENDS HERE -->
+
+<script>
+    // If user clicks anywhere outside of the modal, Modal will close
+
+    var modal = document.getElementById('modal-wrapper');
+    var modal2 = document.getElementById('modal-wrapper2');
+    var modal1 = document.getElementById('modal-wrapper3');
+    var modal3 = document.getElementById('modal-wrapper5');
+    var modal4 = document.getElementById('modal-wrapper1');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+        if (event.target == modal1) {
+            modal1.style.display = "none";
+        }
+        if (event.target == modal3) {
+            modal3.style.display = "none";
+        }
+        if (event.target == modal4) {
+            modal4.style.display = "none";
+        }
+    }
+
+
+</script>
+
+<script>
+    function bankbutton(name) {
+        if (name.localeCompare('cibc') == 0) {
+            document.getElementById("cibc").style.border = "5px solid #da9b31";
+            document.getElementById("scot").style.border = "none";
+            document.getElementById("bmo").style.border = "none";
+            document.getElementById("rbc").style.border = "none";
+            document.getElementById("td").style.border = "none";
+        }
+
+        if (name.localeCompare('scot') == 0) {
+            document.getElementById("scot").style.border = "5px solid #da9b31";
+            document.getElementById("cibc").style.border = "none";
+            document.getElementById("bmo").style.border = "none";
+            document.getElementById("rbc").style.border = "none";
+            document.getElementById("td").style.border = "none";
+        }
+
+        if (name.localeCompare('td') == 0) {
+            document.getElementById("td").style.border = "5px solid #da9b31";
+            document.getElementById("scot").style.border = "none";
+            document.getElementById("bmo").style.border = "none";
+            document.getElementById("rbc").style.border = "none";
+            document.getElementById("cibc").style.border = "none";
+        }
+
+        if (name.localeCompare('bmo') == 0) {
+            document.getElementById("bmo").style.border = "5px solid #da9b31";
+            document.getElementById("scot").style.border = "none";
+            document.getElementById("cibc").style.border = "none";
+            document.getElementById("rbc").style.border = "none";
+            document.getElementById("td").style.border = "none";
+        }
+
+        if (name.localeCompare('rbc') == 0) {
+            document.getElementById("rbc").style.border = "5px solid #da9b31";
+            document.getElementById("scot").style.border = "none";
+            document.getElementById("cibc").style.border = "none";
+            document.getElementById("bmo").style.border = "none";
+            document.getElementById("td").style.border = "none";
+        }
+    }
+
+</script>
+
+</html>
+
